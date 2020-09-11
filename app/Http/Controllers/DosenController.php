@@ -8,6 +8,9 @@ class DosenController extends Controller
 {
     public function index(){
         $nama = "Azzamudin";
-        return view('biodata' ,['nama' => $nama]);
+        
+        $pelajaran = ["algoritma & Pemrograman", "Kalkulus","Pemrograman Web"];
+
+        return view('biodata' ,['nama' => $nama , 'matkul' => $pelajaran]);
     }
 }
