@@ -6,5 +6,10 @@ use Illuminate\Http\Request;
 
 class PegawaiController extends Controller
 {
-    //di sini isi controller pegawai
+    public function index($nama){
+
+        return $nama = "belajarngoding";
+
+    }
+
 }

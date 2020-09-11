@@ -27,4 +27,4 @@ Route::get('blog', function () {
 
 Route::get('dosen', 'App\Http\Controllers\DosenController@index');
 
-Route::get('/pegawai/{nama}', 'PegawaiController@index');
+Route::get('/pegawai/{belajarngoding}', 'PegawaiController@index');
