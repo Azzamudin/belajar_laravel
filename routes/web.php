@@ -25,4 +25,4 @@ Route::get('blog', function () {
     return view ('blog');
 });
 
-Route::get('dosen', 'app/Http/Controllers/DosenController@index');
+Route::get('dosen', 'App\Http\Controllers\DosenController@index');
