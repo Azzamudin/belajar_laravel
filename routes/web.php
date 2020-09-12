@@ -31,3 +31,9 @@ Route::get('/pegawai/{belajarngoding}', 'App\Http\Controllers\PegawaiController@
 
 Route::get('/formulir', 'App\Http\Controllers\PegawaiController@formulir');
 Route::post('/formulir/proses', 'App\Http\Controllers\PegawaiController@proses');
+
+
+//route blog
+Route::get('/blog', 'BlogController@home');
+Route::get('/blog/tentang', 'BlogController@tentang');
+Route::get('/blog/kontak', 'BlogController@kontak');
