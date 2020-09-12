@@ -28,3 +28,6 @@ Route::get('blog', function () {
 Route::get('dosen', 'App\Http\Controllers\DosenController@index');
 
 Route::get('/pegawai/{belajarngoding}', 'App\Http\Controllers\PegawaiController@index');
+
+Route::get('/formulir', 'App\Http\Controllers\PegawaiController@formulir');
+Route::post('/formulir/proses', 'App\Http\Controllers\PegawaiController@proses');
