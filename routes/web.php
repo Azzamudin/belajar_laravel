@@ -37,3 +37,6 @@ Route::post('/formulir/proses', 'App\Http\Controllers\PegawaiController@proses')
 Route::get('/blog', 'App\Http\Controllers\BlogController@home');
 Route::get('/blog/tentang', 'App\Http\Controllers\BlogController@tentang');
 Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@kontak');
+
+//route CRUD
+Route::get('/pegawai', 'App\Http\Controllers\PegawaiController@index');
