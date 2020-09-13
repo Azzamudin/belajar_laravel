@@ -40,3 +40,4 @@ Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@kontak');
 
 //route CRUD
 Route::get('/pegawai', 'App\Http\Controllers\PegawaiController@index');
+
