@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial Membuat CRUD Pada Larave - www.malasngoding.com</title>
+    <title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
 </head>
 <body>
 
@@ -25,10 +25,10 @@
     </tr>
     @foreach($pegawai as $p)
     <tr>
-        <td>{{ $p->Pegawai_nama }}</td>
-        <td>{{ $p->Pegawai_jabatan }}</td>
-        <td>{{ $p->Pegawai_umur }}</td>
-        <td>{{ $p->Pegawai_alamat }}</td>
+        <td>{{ $p->pegawai_nama }}</td>
+        <td>{{ $p->pegawai_jabatan }}</td>
+        <td>{{ $p->pegawai_umur }}</td>
+        <td>{{ $p->pegawai_alamat }}</td>
         <td>
             <a href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
 

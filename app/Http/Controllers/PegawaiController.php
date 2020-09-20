@@ -9,10 +9,12 @@ use Illuminate\Support\Facades\DB;
 class PegawaiController extends Controller
 {
 
-    public function index($nama){
-
-        return $nama = "belajarngoding";
-
+    public function index(){  
+        // mengambil data dari table pegawai
+        $pegawai = DB::table('pegawai')->get();
+    
+        // mengirim data pegawai ke view index
+        return view('index',['pegawai' => $pegawai]);
     }
 
     public function formulir(){
@@ -26,16 +28,8 @@ class PegawaiController extends Controller
         return "Nama : ".$nama.", Alamat : ".$alamat; 
     }
 
-    public function index()
-    {
-        // mengambil data dari table pegawai
-        $pegawai = DB::table('pegawai')->get();
     
-        // mengirim data pegawai ke view index
-        return view('index',['pegawai' => $pegawai]);
-    
-    }
-
+        
 }
 
 
